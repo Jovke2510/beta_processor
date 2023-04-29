@@ -1,0 +1,83 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity tb_register_file is
+end tb_register_file;
+
+architecture behavior of tb_register_file is
+    signal clk, rst, we: std_logic := '0';
+    signal d, muxa, muxb: std_logic_vector(31 downto 0) := (others => '0');
+    signal wa, ra1, ra2: std_logic_vector(4 downto 0) := "00000";
+    signal rd1, rd2: std_logic_vector(31 downto 0);
+begin
+    uut: entity work.register_file
+    generic map (
+        WIDTH => 32
+    )
+    port map (
+        iCLK => clk,
+        inRST => rst,
+        iWA => wa,
+        iWE => we,
+        iD => d,
+        iRA1 => ra1,
+        iRA2 => ra2,
+        oRD1 => rd1,
+        oRD2 => rd2
+    );
+
+    process
+    begin
+        clk <= '0';
+        wait for 10 ns;
+        clk <= '1';
+        wait for 10 ns;
+    end process;
+
+    process
+    begin
+        rst <= '1';
+        wait for 10 ns;
+        rst <= '0';
+        wait for 10 ns;
+
+        -- Test Case 1
+        d <= x"DEADBEEF";
+        we <= '1';
+        wa <= "00000";
+        wait for 10 ns;
+        we <= '0';
+        ra1 <= "00000";
+        ra2 <= "00000";
+        wait for 10 ns;
+        assert rd1 = x"DEADBEEF" and rd2 = x"00000000"
+            report "Test Case 1 failed" severity error;
+
+        -- Test Case 2
+        d <= x"12345678";
+        we <= '1';
+        wa <= "00001";
+        wait for 10 ns;
+        we <= '0';
+        ra1 <= "00001";
+        ra2 <= "00000";
+        wait for 10 ns;
+        assert rd1 = x"12345678" and rd2 = x"DEADBEEF"
+            report "Test Case 2 failed" severity error;
+
+        -- Test Case 3
+        d <= x"ABCDEF01";
+        we <= '1';
+        wa <= "00010";
+        wait for 10 ns;
+        we <= '0';
+        ra1 <= "00010";
+        ra2 <= "00000";
+        wait for 10 ns;
+        assert rd1 = x"ABCDEF01" and rd2 = x"12345678"
+            report "Test Case 3 failed" severity error;
+
+        wait;
+    end process;
+
+end behavior;

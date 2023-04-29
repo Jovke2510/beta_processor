@@ -1,0 +1,11 @@
+Passed the tests:
+
+	register_mux.vhd
+	registers.vhd
+	register_zero.vhd
+	register_file.vhd
+	
+To test and debug:
+	
+	alu.vhd
+	control_unit.vhd

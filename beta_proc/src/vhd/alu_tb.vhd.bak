@@ -1,0 +1,57 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity alu_tb is
+end entity alu_tb;
+
+architecture testbench of alu_tb is
+
+    -- Component declaration for the unit under test (UUT)
+    component alu
+        generic (
+            WIDTH : integer := 32
+        );
+        port (
+            iA      : in std_logic_vector(WIDTH-1 downto 0);
+            iB      : in std_logic_vector(WIDTH-1 downto 0);
+            iALUFN  : in std_logic_vector(5 downto 0);
+            oQ      : out std_logic_vector(WIDTH-1 downto 0)
+        );
+    end component;
+
+    -- Inputs
+    signal iA : std_logic_vector(31 downto 0) := x"01234567";
+    signal iB : std_logic_vector(31 downto 0) := x"89ABCDEF";
+    signal iALUFN : std_logic_vector(5 downto 0) := "100000"; -- add operation
+
+    -- Outputs
+    signal oQ : std_logic_vector(31 downto 0);
+
+begin
+
+    -- Instantiate the Unit Under Test (UUT)
+    uut: alu generic map(WIDTH => 32) port map(iA => iA, iB => iB, iALUFN => iALUFN, oQ => oQ);
+
+    -- Stimulus process
+    stim_proc: process
+    begin
+        -- wait a few clock cycles
+        wait for 10 ns;
+
+        -- Test ADD operation
+        assert(oQ = x"9BDF0124") report "Test 1 failed: expected x9BDF0124, got " & oQ.hex severity error;
+        iALUFN <= "100001"; -- subtract operation
+        wait for 10 ns;
+
+        -- Test SUB operation
+        assert(oQ = x"7895B888") report "Test 2 failed: expected x7895B888, got " & oQ.hex severity error;
+        iALUFN <= "100100"; -- compare for equality operation
+        wait for 10 ns;
+
+        -- Test compare for equality operation
+        assert(oQ = x"00000000") report "Test 3 failed: expected x00000000, got " & oQ.hex severity error;
+        wait;
+
+    end process;
+
+end architecture testbench;
