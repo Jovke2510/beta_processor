@@ -1,6 +1,6 @@
 Power Analyzer report for Beta_CPU
-Wed Apr 26 21:47:57 2023
-Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Sat May 20 18:36:38 2023
+Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 
 
 ---------------------
@@ -28,9 +28,9 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2018  Intel Corporation. All rights reserved.
+Copyright (C) 2023  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -40,7 +40,8 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 
 
 
@@ -52,20 +53,20 @@ refer to the applicable agreement for further details.
 ; Number detected on machine ; 8           ;
 ; Maximum allowed            ; 8           ;
 ;                            ;             ;
-; Average used               ; 1.99        ;
+; Average used               ; 2.12        ;
 ; Maximum used               ; 8           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
-;     Processors 2-8         ;  14.1%      ;
+;     Processors 2-8         ;  16.0%      ;
 +----------------------------+-------------+
 
 
 +-------------------------------------------------------------------------------------------+
 ; Power Analyzer Summary                                                                    ;
 +----------------------------------------+--------------------------------------------------+
-; Power Analyzer Status                  ; Successful - Wed Apr 26 21:47:57 2023            ;
-; Quartus Prime Version                  ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition      ;
+; Power Analyzer Status                  ; Successful - Sat May 20 18:36:38 2023            ;
+; Quartus Prime Version                  ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition   ;
 ; Revision Name                          ; Beta_CPU                                         ;
 ; Top-level Entity Name                  ; register_file                                    ;
 ; Family                                 ; MAX 10                                           ;
@@ -282,12 +283,12 @@ refer to the applicable agreement for further details.
 +----------+---------------+---------------------+-----------------------+----------------------+
 ; I/O Bank ; VCCIO Voltage ; Total Current Drawn ; Dynamic Current Drawn ; Static Current Drawn ;
 +----------+---------------+---------------------+-----------------------+----------------------+
-; 1A       ; 2.5V          ; 0.29 mA             ; 0.00 mA               ; 0.29 mA              ;
+; 1A       ; 2.5V          ; 0.30 mA             ; 0.00 mA               ; 0.30 mA              ;
 ; 1B       ; 2.5V          ; 0.30 mA             ; 0.00 mA               ; 0.30 mA              ;
-; 2        ; 2.5V          ; 0.31 mA             ; 0.00 mA               ; 0.31 mA              ;
+; 2        ; 2.5V          ; 0.30 mA             ; 0.00 mA               ; 0.30 mA              ;
 ; 3        ; 2.5V          ; 0.35 mA             ; 0.00 mA               ; 0.35 mA              ;
 ; 4        ; --            ; --                  ; --                    ; --                   ;
-; 5        ; 2.5V          ; 0.31 mA             ; 0.00 mA               ; 0.31 mA              ;
+; 5        ; 2.5V          ; 0.32 mA             ; 0.00 mA               ; 0.32 mA              ;
 ; 6        ; 2.5V          ; 0.33 mA             ; 0.00 mA               ; 0.33 mA              ;
 ; 7        ; --            ; --                  ; --                    ; --                   ;
 ; 8        ; 2.5V          ; 0.34 mA             ; 0.00 mA               ; 0.34 mA              ;
@@ -345,8 +346,8 @@ refer to the applicable agreement for further details.
 +-------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Power Analyzer
-    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Apr 26 21:47:52 2023
+    Info: Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+    Info: Processing started: Sat May 20 18:36:34 2023
 Info: Command: quartus_pow --read_settings_files=off --write_settings_files=off Beta_CPU -c Beta_CPU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (21077): Low junction temperature is 0 degrees C
@@ -364,9 +365,9 @@ Info (334004): Delay annotation completed successfully
 Info (215049): Average toggle rate for this design is 0.000 millions of transitions / sec
 Info (215031): Total thermal power estimate for the design is 220.90 mW
 Info: Quartus Prime Power Analyzer was successful. 0 errors, 5 warnings
-    Info: Peak virtual memory: 4888 megabytes
-    Info: Processing ended: Wed Apr 26 21:47:57 2023
-    Info: Elapsed time: 00:00:05
+    Info: Peak virtual memory: 849 megabytes
+    Info: Processing ended: Sat May 20 18:36:38 2023
+    Info: Elapsed time: 00:00:04
     Info: Total CPU time (on all processors): 00:00:08
 
 

@@ -1,6 +1,6 @@
 Analysis & Synthesis report for Beta_CPU
-Wed Apr 26 21:47:23 2023
-Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
+Sat May 20 18:36:16 2023
+Quartus Prime Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
 
 
 ---------------------
@@ -58,9 +58,9 @@ Quartus Prime Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2018  Intel Corporation. All rights reserved.
+Copyright (C) 2023  Intel Corporation. All rights reserved.
 Your use of Intel Corporation's design tools, logic functions 
-and other software and tools, and its AMPP partner logic 
+and other software and tools, and any partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
@@ -70,30 +70,31 @@ the Intel FPGA IP License Agreement, or other applicable license
 agreement, including, without limitation, that your use is for
 the sole purpose of programming logic devices manufactured by
 Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
 
 
 
-+----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                     ;
-+------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Wed Apr 26 21:47:23 2023       ;
-; Quartus Prime Version              ; 18.1.0 Build 625 09/12/2018 SJ Lite Edition ;
-; Revision Name                      ; Beta_CPU                                    ;
-; Top-level Entity Name              ; register_file                               ;
-; Family                             ; MAX 10                                      ;
-; Total logic elements               ; 2,324                                       ;
-;     Total combinational functions  ; 1,332                                       ;
-;     Dedicated logic registers      ; 992                                         ;
-; Total registers                    ; 992                                         ;
-; Total pins                         ; 114                                         ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
-; UFM blocks                         ; 0                                           ;
-; ADC blocks                         ; 0                                           ;
-+------------------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                        ;
++------------------------------------+------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Sat May 20 18:36:16 2023          ;
+; Quartus Prime Version              ; 22.1std.1 Build 917 02/14/2023 SC Lite Edition ;
+; Revision Name                      ; Beta_CPU                                       ;
+; Top-level Entity Name              ; register_file                                  ;
+; Family                             ; MAX 10                                         ;
+; Total logic elements               ; 2,324                                          ;
+;     Total combinational functions  ; 1,332                                          ;
+;     Dedicated logic registers      ; 992                                            ;
+; Total registers                    ; 992                                            ;
+; Total pins                         ; 114                                            ;
+; Total virtual pins                 ; 0                                              ;
+; Total memory bits                  ; 0                                              ;
+; Embedded Multiplier 9-bit elements ; 0                                              ;
+; Total PLLs                         ; 0                                              ;
+; UFM blocks                         ; 0                                              ;
+; ADC blocks                         ; 0                                              ;
++------------------------------------+------------------------------------------------+
 
 
 +------------------------------------------------------------------------------------------------------------+
@@ -206,16 +207,16 @@ refer to the applicable agreement for further details.
 +----------------------------+-------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                      ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                               ; Library ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------+---------+
-; src/vhd/register_mux.vhd         ; yes             ; User VHDL File  ; C:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/register_mux.vhd  ;         ;
-; src/vhd/register_file.vhd        ; yes             ; User VHDL File  ; C:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/register_file.vhd ;         ;
-; src/vhd/register_zero.vhd        ; yes             ; User VHDL File  ; C:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/register_zero.vhd ;         ;
-; src/vhd/registers.vhd            ; yes             ; User VHDL File  ; C:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/registers.vhd     ;         ;
-+----------------------------------+-----------------+-----------------+----------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                    ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                                             ; Library ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------+---------+
+; src/vhd/register_mux.vhd         ; yes             ; User VHDL File  ; /home/lazar/Documents/beta_processor/beta_proc/src/vhd/register_mux.vhd  ;         ;
+; src/vhd/register_file.vhd        ; yes             ; User VHDL File  ; /home/lazar/Documents/beta_processor/beta_proc/src/vhd/register_file.vhd ;         ;
+; src/vhd/register_zero.vhd        ; yes             ; User VHDL File  ; /home/lazar/Documents/beta_processor/beta_proc/src/vhd/register_zero.vhd ;         ;
+; src/vhd/registers.vhd            ; yes             ; User VHDL File  ; /home/lazar/Documents/beta_processor/beta_proc/src/vhd/registers.vhd     ;         ;
++----------------------------------+-----------------+-----------------+--------------------------------------------------------------------------+---------+
 
 
 +----------------------------------------------------------+
@@ -318,14 +319,14 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                 ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
-; 32:1               ; 32 bits   ; 672 LEs       ; 640 LEs              ; 32 LEs                 ; No         ; |register_file|register_mux:r_muxa_i|oQ[0] ;
-; 32:1               ; 32 bits   ; 672 LEs       ; 640 LEs              ; 32 LEs                 ; No         ; |register_file|register_mux:r_muxb_i|oQ[0] ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
+; 32:1               ; 32 bits   ; 672 LEs       ; 640 LEs              ; 32 LEs                 ; No         ; |register_file|register_mux:r_muxa_i|oQ[25] ;
+; 32:1               ; 32 bits   ; 672 LEs       ; 640 LEs              ; 32 LEs                 ; No         ; |register_file|register_mux:r_muxb_i|oQ[16] ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
 
 
 +-------------------------------------------------------------------------------+
@@ -682,7 +683,7 @@ Note: In order to hide this table in the UI and the text report file, please set
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:03     ;
+; Top            ; 00:00:02     ;
 +----------------+--------------+
 
 
@@ -691,39 +692,39 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-------------------------------+
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 18.1.0 Build 625 09/12/2018 SJ Lite Edition
-    Info: Processing started: Wed Apr 26 21:47:05 2023
+    Info: Version 22.1std.1 Build 917 02/14/2023 SC Lite Edition
+    Info: Processing started: Sat May 20 18:36:03 2023
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Beta_CPU -c Beta_CPU
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
 Info (12021): Found 2 design units, including 1 entities, in source file src/vhd/register_mux.vhd
-    Info (12022): Found design unit 1: register_mux-Behavioral File: C:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/register_mux.vhd Line: 41
-    Info (12023): Found entity 1: register_mux File: C:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/register_mux.vhd Line: 4
+    Info (12022): Found design unit 1: register_mux-Behavioral File: /home/lazar/Documents/beta_processor/beta_proc/src/vhd/register_mux.vhd Line: 41
+    Info (12023): Found entity 1: register_mux File: /home/lazar/Documents/beta_processor/beta_proc/src/vhd/register_mux.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file src/vhd/register_file.vhd
-    Info (12022): Found design unit 1: register_file-arch File: C:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/register_file.vhd Line: 22
-    Info (12023): Found entity 1: register_file File: C:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/register_file.vhd Line: 6
+    Info (12022): Found design unit 1: register_file-arch File: /home/lazar/Documents/beta_processor/beta_proc/src/vhd/register_file.vhd Line: 22
+    Info (12023): Found entity 1: register_file File: /home/lazar/Documents/beta_processor/beta_proc/src/vhd/register_file.vhd Line: 6
 Info (12021): Found 2 design units, including 1 entities, in source file src/vhd/register_zero.vhd
-    Info (12022): Found design unit 1: register_zero-Behavioral File: C:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/register_zero.vhd Line: 13
-    Info (12023): Found entity 1: register_zero File: C:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/register_zero.vhd Line: 4
+    Info (12022): Found design unit 1: register_zero-Behavioral File: /home/lazar/Documents/beta_processor/beta_proc/src/vhd/register_zero.vhd Line: 13
+    Info (12023): Found entity 1: register_zero File: /home/lazar/Documents/beta_processor/beta_proc/src/vhd/register_zero.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file src/vhd/registers.vhd
-    Info (12022): Found design unit 1: registers-Behavioral File: C:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/registers.vhd Line: 13
-    Info (12023): Found entity 1: registers File: C:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/registers.vhd Line: 4
+    Info (12022): Found design unit 1: registers-Behavioral File: /home/lazar/Documents/beta_processor/beta_proc/src/vhd/registers.vhd Line: 13
+    Info (12023): Found entity 1: registers File: /home/lazar/Documents/beta_processor/beta_proc/src/vhd/registers.vhd Line: 4
 Info (12021): Found 2 design units, including 1 entities, in source file src/vhd/alu.vhd
-    Info (12022): Found design unit 1: alu-arch File: C:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/alu.vhd Line: 15
-    Info (12023): Found entity 1: alu File: C:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/alu.vhd Line: 5
+    Info (12022): Found design unit 1: alu-arch File: /home/lazar/Documents/beta_processor/beta_proc/src/vhd/alu.vhd Line: 15
+    Info (12023): Found entity 1: alu File: /home/lazar/Documents/beta_processor/beta_proc/src/vhd/alu.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file src/vhd/control_unit.vhd
-    Info (12022): Found design unit 1: control_unit-arch File: C:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/control_unit.vhd Line: 28
-    Info (12023): Found entity 1: control_unit File: C:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/control_unit.vhd Line: 5
+    Info (12022): Found design unit 1: control_unit-arch File: /home/lazar/Documents/beta_processor/beta_proc/src/vhd/control_unit.vhd Line: 28
+    Info (12023): Found entity 1: control_unit File: /home/lazar/Documents/beta_processor/beta_proc/src/vhd/control_unit.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file src/vhd/alu_tb.vhd
-    Info (12022): Found design unit 1: alu_tb-testbench File: C:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/alu_tb.vhd Line: 8
-    Info (12023): Found entity 1: alu_tb File: C:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/alu_tb.vhd Line: 5
+    Info (12022): Found design unit 1: alu_tb-testbench File: /home/lazar/Documents/beta_processor/beta_proc/src/vhd/alu_tb.vhd Line: 8
+    Info (12023): Found entity 1: alu_tb File: /home/lazar/Documents/beta_processor/beta_proc/src/vhd/alu_tb.vhd Line: 5
 Info (12021): Found 2 design units, including 1 entities, in source file src/vhd/control_unit_tb.vhd
-    Info (12022): Found design unit 1: control_unit_tb-test File: C:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/control_unit_tb.vhd Line: 7
-    Info (12023): Found entity 1: control_unit_tb File: C:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/control_unit_tb.vhd Line: 4
+    Info (12022): Found design unit 1: control_unit_tb-test File: /home/lazar/Documents/beta_processor/beta_proc/src/vhd/control_unit_tb.vhd Line: 7
+    Info (12023): Found entity 1: control_unit_tb File: /home/lazar/Documents/beta_processor/beta_proc/src/vhd/control_unit_tb.vhd Line: 4
 Info (12127): Elaborating entity "register_file" for the top level hierarchy
-Info (12128): Elaborating entity "register_mux" for hierarchy "register_mux:r_muxa_i" File: C:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/register_file.vhd Line: 28
-Info (12128): Elaborating entity "registers" for hierarchy "registers:r0_i" File: C:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/register_file.vhd Line: 141
-Info (12128): Elaborating entity "register_zero" for hierarchy "register_zero:r31_i" File: C:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/register_file.vhd Line: 420
+Info (12128): Elaborating entity "register_mux" for hierarchy "register_mux:r_muxa_i" File: /home/lazar/Documents/beta_processor/beta_proc/src/vhd/register_file.vhd Line: 28
+Info (12128): Elaborating entity "registers" for hierarchy "registers:r0_i" File: /home/lazar/Documents/beta_processor/beta_proc/src/vhd/register_file.vhd Line: 141
+Info (12128): Elaborating entity "register_zero" for hierarchy "register_zero:r31_i" File: /home/lazar/Documents/beta_processor/beta_proc/src/vhd/register_file.vhd Line: 420
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -732,9 +733,9 @@ Info (21057): Implemented 2438 device resources after synthesis - the final reso
     Info (21059): Implemented 64 output pins
     Info (21061): Implemented 2324 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 1 warning
-    Info: Peak virtual memory: 4798 megabytes
-    Info: Processing ended: Wed Apr 26 21:47:23 2023
-    Info: Elapsed time: 00:00:18
-    Info: Total CPU time (on all processors): 00:00:36
+    Info: Peak virtual memory: 460 megabytes
+    Info: Processing ended: Sat May 20 18:36:16 2023
+    Info: Elapsed time: 00:00:13
+    Info: Total CPU time (on all processors): 00:00:31
 
 

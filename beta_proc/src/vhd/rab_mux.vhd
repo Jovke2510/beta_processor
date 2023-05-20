@@ -1,0 +1,18 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+
+entity rab_mux is 
+	Port ( iD0 : in STD_LOGIC_VECTOR (31 downto 0);
+			 iD1 : in STD_LOGIC_VECTOR (31 downto 0);
+			 iSEL : in STD_LOGIC;
+			 oQ : out STD_LOGIC_VECTOR (31 downto 0));
+end rab_mux;
+
+architecture Behavioral of rab_mux is
+
+begin
+
+	oQ <= iD0 when iSEL = '0' else
+			iD1;
+			
+end Behavioral;

@@ -7,202 +7,206 @@ z2
 !i10e 25
 !i10f 100
 cModel Technology
-Z0 dC:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/simulation/modelsim
-Econtrol_unit_tb
-Z1 w1682537826
-Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
-Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z0 d/home/lazar/Documents/beta_processor/beta_proc/simulation/modelsim
+Ealu_tb
+Z1 w1684600536
+Z2 DPx4 ieee 15 std_logic_arith 0 22 [G314=:2zXJ`VORJe1J@Z1
+Z3 DPx4 ieee 18 std_logic_unsigned 0 22 ;eZjO2D4ZDz<]0>8AL<ne1
+Z4 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z5 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
 R0
-Z4 8C:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/control_unit_tb.vhd
-Z5 FC:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/control_unit_tb.vhd
+Z6 8/home/lazar/Documents/beta_processor/beta_proc/src/vhd/alu_tb.vhd
+Z7 F/home/lazar/Documents/beta_processor/beta_proc/src/vhd/alu_tb.vhd
 l0
-L4
-VJLi`Xj`1Y;Ck:8A6CJQSK3
-!s100 Q_R2_0@30>e?olghNbG:`2
-Z6 OV;C;10.5b;63
+L5
+V1gT3c1R_MN4ENR[>]57SI3
+!s100 89dII[VO75D47VbU;@:J42
+Z8 OV;C;10.5b;63
 33
-Z7 !s110 1682538258
+Z9 !s110 1684600619
 !i10b 1
-Z8 !s108 1682538258.000000
-Z9 !s90 -reportprogress|300|-2008|-work|work|C:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/control_unit_tb.vhd|
-Z10 !s107 C:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/control_unit_tb.vhd|
+Z10 !s108 1684600619.000000
+Z11 !s90 -reportprogress|300|-2008|-work|work|/home/lazar/Documents/beta_processor/beta_proc/src/vhd/alu_tb.vhd|
+Z12 !s107 /home/lazar/Documents/beta_processor/beta_proc/src/vhd/alu_tb.vhd|
 !i113 1
-Z11 o-2008 -work work
-Z12 tExplicit 1 CvgOpt 0
-Atest
+Z13 o-2008 -work work
+Z14 tExplicit 1 CvgOpt 0
+Atestbench
 R2
 R3
-DEx4 work 15 control_unit_tb 0 22 JLi`Xj`1Y;Ck:8A6CJQSK3
-l49
-L7
-VIh1_VdBM5T:BA5z6lK;>H1
-!s100 o>MnkJ<InfXh8X][WW8Mg1
-R6
-33
-R7
-!i10b 1
+R4
+R5
+DEx4 work 6 alu_tb 0 22 1gT3c1R_MN4ENR[>]57SI3
+l31
+L8
+V2gLlW;NJ:1J4zizS:@:z@0
+!s100 1l;YZRDPP5[^CW;7Q>SQ@0
 R8
+33
 R9
+!i10b 1
 R10
-!i113 1
 R11
 R12
+!i113 1
+R13
+R14
 Eregister_file
-Z13 w1680697131
-R2
-R3
+Z15 w1684588792
+R4
+R5
 R0
-Z14 8C:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/register_file.vhd
-Z15 FC:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/register_file.vhd
+Z16 8/home/lazar/Documents/beta_processor/beta_proc/src/vhd/register_file.vhd
+Z17 F/home/lazar/Documents/beta_processor/beta_proc/src/vhd/register_file.vhd
 l0
 L6
 VPA2ObMChmdCe<bUmWdf873
 !s100 <f88<3e8hVI?jK4Qo=G2Q0
-R6
+R8
 33
-Z16 !s110 1682538257
+R9
 !i10b 1
-Z17 !s108 1682538257.000000
-Z18 !s90 -reportprogress|300|-2008|-work|work|C:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/register_file.vhd|
-Z19 !s107 C:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/register_file.vhd|
+R10
+Z18 !s90 -reportprogress|300|-2008|-work|work|/home/lazar/Documents/beta_processor/beta_proc/src/vhd/register_file.vhd|
+Z19 !s107 /home/lazar/Documents/beta_processor/beta_proc/src/vhd/register_file.vhd|
 !i113 1
-R11
-R12
+R13
+R14
 Aarch
 Z20 DEx4 work 13 register_zero 0 22 7IIHzg0E_JElDPnbnoO=80
 Z21 DEx4 work 9 registers 0 22 ROLL^AiBY:<0e4i^nTKRZ3
 Z22 DEx4 work 12 register_mux 0 22 i_^4@`kkX`U>hFBa:ga?C3
-R2
-R3
+R4
+R5
 DEx4 work 13 register_file 0 22 PA2ObMChmdCe<bUmWdf873
 l26
 L22
 VS:nf1Dn1<k1C35]CC;na_3
 !s100 0e>mDWRoGADQzfKM<K_Kl2
-R6
+R8
 33
-R16
+R9
 !i10b 1
-R17
+R10
 R18
 R19
 !i113 1
-R11
-R12
+R13
+R14
 Eregister_mux
-Z23 w1678812813
-R2
-R3
+R15
+R4
+R5
 R0
-Z24 8C:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/register_mux.vhd
-Z25 FC:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/register_mux.vhd
+Z23 8/home/lazar/Documents/beta_processor/beta_proc/src/vhd/register_mux.vhd
+Z24 F/home/lazar/Documents/beta_processor/beta_proc/src/vhd/register_mux.vhd
 l0
 L4
 Vi_^4@`kkX`U>hFBa:ga?C3
 !s100 0_0^IlbCnRl5kS:;SNDJP1
-R6
+R8
 33
-R16
+Z25 !s110 1684600618
 !i10b 1
-R17
-Z26 !s90 -reportprogress|300|-2008|-work|work|C:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/register_mux.vhd|
-Z27 !s107 C:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/register_mux.vhd|
+Z26 !s108 1684600618.000000
+Z27 !s90 -reportprogress|300|-2008|-work|work|/home/lazar/Documents/beta_processor/beta_proc/src/vhd/register_mux.vhd|
+Z28 !s107 /home/lazar/Documents/beta_processor/beta_proc/src/vhd/register_mux.vhd|
 !i113 1
-R11
-R12
+R13
+R14
 Abehavioral
-R2
-R3
+R4
+R5
 R22
 l43
 L41
 Vi^7W8CVc?RE_jzl4Y@E6E0
 !s100 FRO4Z5TUMR?P2W2DaBNlB1
-R6
+R8
 33
-R16
+R25
 !i10b 1
-R17
 R26
 R27
+R28
 !i113 1
-R11
-R12
+R13
+R14
 Eregister_zero
-Z28 w1682357649
-R2
-R3
+R15
+R4
+R5
 R0
-Z29 8C:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/register_zero.vhd
-Z30 FC:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/register_zero.vhd
+Z29 8/home/lazar/Documents/beta_processor/beta_proc/src/vhd/register_zero.vhd
+Z30 F/home/lazar/Documents/beta_processor/beta_proc/src/vhd/register_zero.vhd
 l0
 L4
 V7IIHzg0E_JElDPnbnoO=80
 !s100 haV_B5]@koR6_KbEiHZaS2
-R6
+R8
 33
-R16
+R9
 !i10b 1
-R17
-Z31 !s90 -reportprogress|300|-2008|-work|work|C:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/register_zero.vhd|
-Z32 !s107 C:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/register_zero.vhd|
+R26
+Z31 !s90 -reportprogress|300|-2008|-work|work|/home/lazar/Documents/beta_processor/beta_proc/src/vhd/register_zero.vhd|
+Z32 !s107 /home/lazar/Documents/beta_processor/beta_proc/src/vhd/register_zero.vhd|
 !i113 1
-R11
-R12
+R13
+R14
 Abehavioral
-R2
-R3
+R4
+R5
 R20
 l16
 L13
 Vz>ICnAVziR1SHEU4IW9Kl0
 !s100 1lcZ<AT@>BKn3=aW@@<X?0
-R6
+R8
 33
-R16
+R9
 !i10b 1
-R17
+R26
 R31
 R32
 !i113 1
-R11
-R12
+R13
+R14
 Eregisters
-Z33 w1682531160
-R2
-R3
+R15
+R4
+R5
 R0
-Z34 8C:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/registers.vhd
-Z35 FC:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/registers.vhd
+Z33 8/home/lazar/Documents/beta_processor/beta_proc/src/vhd/registers.vhd
+Z34 F/home/lazar/Documents/beta_processor/beta_proc/src/vhd/registers.vhd
 l0
 L4
 VROLL^AiBY:<0e4i^nTKRZ3
 !s100 >f2Q>TV1h=J9K7SEZGaAh0
-R6
+R8
 33
-R16
+R9
 !i10b 1
-R17
-Z36 !s90 -reportprogress|300|-2008|-work|work|C:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/registers.vhd|
-Z37 !s107 C:/Users/lakij/OneDrive/Dokumenti/beta/beta_proc/src/vhd/registers.vhd|
+R10
+Z35 !s90 -reportprogress|300|-2008|-work|work|/home/lazar/Documents/beta_processor/beta_proc/src/vhd/registers.vhd|
+Z36 !s107 /home/lazar/Documents/beta_processor/beta_proc/src/vhd/registers.vhd|
 !i113 1
-R11
-R12
+R13
+R14
 Abehavioral
-R2
-R3
+R4
+R5
 R21
 l16
 L13
 V@AEe:X6=mKVmZ3PB=Ve5a0
 !s100 ?mB>cY^MP@V=A0m[5YzlF2
-R6
+R8
 33
-R16
+R9
 !i10b 1
-R17
+R10
+R35
 R36
-R37
 !i113 1
-R11
-R12
+R13
+R14

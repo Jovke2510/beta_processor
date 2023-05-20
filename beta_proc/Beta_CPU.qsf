@@ -41,14 +41,14 @@ set_global_assignment -name DEVICE 10M16SAU169C8G
 set_global_assignment -name TOP_LEVEL_ENTITY register_file
 set_global_assignment -name ORIGINAL_QUARTUS_VERSION 18.1.0
 set_global_assignment -name PROJECT_CREATION_TIME_DATE "13:20:30  MARCH 10, 2023"
-set_global_assignment -name LAST_QUARTUS_VERSION "18.1.0 Lite Edition"
+set_global_assignment -name LAST_QUARTUS_VERSION "22.1std.1 Lite Edition"
 set_global_assignment -name PROJECT_OUTPUT_DIRECTORY output_files
 set_global_assignment -name MIN_CORE_JUNCTION_TEMP 0
 set_global_assignment -name MAX_CORE_JUNCTION_TEMP 85
 set_global_assignment -name DEVICE_FILTER_PACKAGE UFBGA
 set_global_assignment -name DEVICE_FILTER_PIN_COUNT 169
 set_global_assignment -name ERROR_CHECK_FREQUENCY_DIVISOR 256
-set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim-Altera (VHDL)"
+set_global_assignment -name EDA_SIMULATION_TOOL "ModelSim (VHDL)"
 set_global_assignment -name EDA_TIME_SCALE "1 ps" -section_id eda_simulation
 set_global_assignment -name EDA_OUTPUT_DATA_FORMAT VHDL -section_id eda_simulation
 set_global_assignment -name VHDL_FILE src/vhd/register_mux.vhd
@@ -67,7 +67,7 @@ set_global_assignment -name FLOW_ENABLE_POWER_ANALYZER ON
 set_global_assignment -name POWER_DEFAULT_INPUT_IO_TOGGLE_RATE "12.5 %"
 set_global_assignment -name VHDL_FILE src/vhd/control_unit.vhd
 set_global_assignment -name EDA_TEST_BENCH_ENABLE_STATUS TEST_BENCH_MODE -section_id eda_simulation
-set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH control_unit_tb -section_id eda_simulation
+set_global_assignment -name EDA_NATIVELINK_SIMULATION_TEST_BENCH alu_tb -section_id eda_simulation
 set_global_assignment -name EDA_TEST_BENCH_NAME register_file_tb -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id register_file_tb
 set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "1 us" -section_id register_file_tb
@@ -76,12 +76,10 @@ set_global_assignment -name EDA_TEST_BENCH_NAME register_mux_tb -section_id eda_
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id register_mux_tb
 set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "1 us" -section_id register_mux_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME register_mux_tb -section_id register_mux_tb
-set_global_assignment -name VHDL_FILE src/vhd/alu_tb.vhd
 set_global_assignment -name EDA_TEST_BENCH_NAME alu_tb -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id alu_tb
 set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "1 us" -section_id alu_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME alu_tb -section_id alu_tb
-set_global_assignment -name VHDL_FILE src/vhd/control_unit_tb.vhd
 set_global_assignment -name EDA_TEST_BENCH_NAME control_unit_tb -section_id eda_simulation
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id control_unit_tb
 set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "1 us" -section_id control_unit_tb
@@ -90,10 +88,15 @@ set_global_assignment -name EDA_TEST_BENCH_NAME registers_tb -section_id eda_sim
 set_global_assignment -name EDA_DESIGN_INSTANCE_NAME NA -section_id registers_tb
 set_global_assignment -name EDA_TEST_BENCH_RUN_SIM_FOR "1 us" -section_id registers_tb
 set_global_assignment -name EDA_TEST_BENCH_MODULE_NAME registers_tb -section_id registers_tb
-set_global_assignment -name TEXT_FILE testing.txt
+set_global_assignment -name DEVICE_FILTER_SPEED_GRADE 8
 set_global_assignment -name EDA_TEST_BENCH_FILE src/vhd/register_file_tb.vhd -section_id register_file_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE src/vhd/register_mux_tb.vhd -section_id register_mux_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE src/vhd/alu_tb.vhd -section_id alu_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE src/vhd/control_unit_tb.vhd -section_id control_unit_tb
 set_global_assignment -name EDA_TEST_BENCH_FILE src/vhd/registers_tb.vhdl -section_id registers_tb
 set_instance_assignment -name PARTITION_HIERARCHY root_partition -to | -section_id Top
+set_global_assignment -name VHDL_FILE src/vhd/pc_counter.vhd
+set_global_assignment -name VHDL_FILE src/vhd/rab_mux.vhd
+set_global_assignment -name VHDL_FILE src/vhd/rw_sel_mux.vhd
+set_global_assignment -name VHDL_FILE src/vhd/pcsel_mux.vhd
+set_global_assignment -name VHDL_FILE src/vhd/wdsel_mux.vhd

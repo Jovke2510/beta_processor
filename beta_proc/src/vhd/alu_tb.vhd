@@ -21,9 +21,9 @@ architecture testbench of alu_tb is
     end component;
 
     -- Inputs
-    signal sA : std_logic_vector(31 downto 0);
-    signal sB : std_logic_vector(31 downto 0);
-    signal sALUFN : std_logic_vector(5 downto 0); 
+    signal sA : std_logic_vector(31 downto 0) := (others => '0');
+    signal sB : std_logic_vector(31 downto 0) := (others => '0');
+    signal sALUFN : std_logic_vector(5 downto 0) := (others => '0'); 
 
     -- Outputs
     signal sQ : std_logic_vector(31 downto 0);
